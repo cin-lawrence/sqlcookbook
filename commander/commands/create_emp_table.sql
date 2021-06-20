@@ -1,0 +1,10 @@
+CREATE TABLE emp (
+  empno INTEGER PRIMARY KEY,
+  ename VARCHAR(16) NOT NULL,
+  job VARCHAR(16) NOT NULL,
+  mgr INTEGER,
+  hiredate VARCHAR(16) NOT NULL,
+  sal INTEGER NOT NULL,
+  comm INTEGER,
+  deptno INTEGER NOT NULL
+)
