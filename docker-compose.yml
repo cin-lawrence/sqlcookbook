@@ -18,6 +18,8 @@ services:
       - .env
     environment:
       - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - cookbook:/var/lib/postgresql/data/pgdata
 
   pgadmin:
     image: dpage/pgadmin4
@@ -26,3 +28,6 @@ services:
       - .env
     ports:
       - 5050:5050
+
+volumes:
+  cookbook:

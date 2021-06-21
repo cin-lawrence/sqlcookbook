@@ -8,10 +8,10 @@ def connect_to_db(dsn):
 
 
 def create_init_tables(conn):
-    with open('commands/create_emp_table') as f:
+    with open('commands/create_emp_table.sql') as f:
         emp_command = f.read()
 
-    with open('commands/create_dept_table') as f:
+    with open('commands/create_dept_table.sql') as f:
         dept_command = f.read()
 
     cur = conn.cursor()
