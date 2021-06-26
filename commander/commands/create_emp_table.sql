@@ -6,5 +6,5 @@ CREATE TABLE emp (
   hiredate VARCHAR(16) NOT NULL,
   sal INTEGER NOT NULL,
   comm INTEGER,
-  deptno INTEGER NOT NULL
+  deptno INTEGER
 )
