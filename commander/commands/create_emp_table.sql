@@ -1,10 +1,10 @@
 CREATE TABLE emp (
-  empno INTEGER PRIMARY KEY,
-  ename VARCHAR(16) NOT NULL,
-  job VARCHAR(16) NOT NULL,
-  mgr INTEGER,
-  hiredate VARCHAR(16) NOT NULL,
-  sal INTEGER NOT NULL,
-  comm INTEGER,
-  deptno INTEGER
-)
+  EMPNO integer NOT NULL,
+  ENAME varchar(10),
+  JOB varchar(9),
+  MGR integer,
+  HIREDATE DATE,
+  SAL integer,
+  COMM integer,
+  DEPTNO integer
+);

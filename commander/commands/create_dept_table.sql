@@ -1,5 +1,5 @@
 CREATE TABLE dept (
   deptno INTEGER NOT NULL,
-  dname VARCHAR(16) NOT NULL,
-  loc VARCHAR(32) NOT NULL
-)
+  dname VARCHAR(14) NOT NULL,
+  loc VARCHAR(13) NOT NULL
+);
