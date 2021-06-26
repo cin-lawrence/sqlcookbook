@@ -14,9 +14,15 @@ def create_init_tables(conn):
     with open('commands/create_dept_table.sql') as f:
         dept_command = f.read()
 
+    with open('commands/create_pivot_table.sql') as f:
+        pivot_command = f.read()
+
     cur = conn.cursor()
     cur.execute(emp_command)
     cur.execute(dept_command)
+    for i in ['1', '10', '100', '500']:
+        command = pivot_command.format(i)
+        cur.execute(command)
     cur.close()
     conn.commit()
 
