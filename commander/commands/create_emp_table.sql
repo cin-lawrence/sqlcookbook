@@ -1,7 +1,7 @@
-CREATE TABLE emp (
+CREATE TABLE EMP (
   EMPNO integer NOT NULL,
-  ENAME varchar(10),
-  JOB varchar(9),
+  ENAME VARCHAR(10),
+  JOB VARCHAR(9),
   MGR integer,
   HIREDATE DATE,
   SAL integer,

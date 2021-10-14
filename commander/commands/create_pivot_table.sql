@@ -1,3 +1,3 @@
-CREATE TABLE t{} (
-  id INTEGER PRIMARY KEY
-)
+CREATE TABLE T{} (
+  ID integer
+);
